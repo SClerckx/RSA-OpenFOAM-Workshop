@@ -1,0 +1,12 @@
+SimFlow: https://sim-flow.com/download-simflow/
+ParaView: https://www.paraview.org/download/
+Windows Terminal: https://docs.microsoft.com/en-us/windows/terminal/install, https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701#activetab=pivot:overviewtab
+Notepad++: https://notepad-plus-plus.org/downloads/
+VSCode: https://code.visualstudio.com/
+VSCode extensions:
+	Remote – WSL
+	C/C++
+
+We will install during the workshop:
+OpenFOAM: https://develop.openfoam.com/Development/openfoam/-/wikis/precompiled/debian
+WSL: https://docs.microsoft.com/en-us/windows/wsl/install
