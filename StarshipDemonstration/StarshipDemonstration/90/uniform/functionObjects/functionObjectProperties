@@ -1,0 +1,34 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "90/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+results
+{
+    forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault
+    {
+        scalar
+        {
+            Cm              0.0827385985743877;
+            Cd              0.2284083975018817;
+            Cl              -0.001162685218208586;
+            Cl(f)           0.08215725596528341;
+            Cl(r)           -0.08331994118349199;
+        }
+    }
+}
+
+
+// ************************************************************************* //

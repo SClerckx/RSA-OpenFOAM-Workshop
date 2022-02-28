@@ -1,0 +1,2022 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : c7ad3a5-20201013 OPENFOAM=1812
+Arch   : "LSB;label=32;scalar=64"
+Exec   : C:\Program Files/SimFlow/engine-1812/bin/simpleFoam
+Date   : Feb 28 2022
+Time   : 20:11:27
+Host   : MSI
+PID    : 15952
+I/O    : uncollated
+Case   : C:/Users/serva/simflow/StarshipDemonstration/StarshipDemonstration
+nProcs : 1
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding OptimisationSwitches according to controlDict
+    fileModificationSkew 0;
+
+    maxMasterFileBufferSize 1e+009;
+
+    maxThreadFileBufferSize 1e+009;
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 0.0001
+    field k	 tolerance 0.0001
+    field epsilon	 tolerance 0.0001
+
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+kEpsilonCoeffs
+{
+    Cmu             0.09;
+    C1              1.44;
+    sigmaEps        1.3;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+}
+
+Creating MRF zone list from MRFProperties
+Creating finite volume options from "system/fvOptions"
+
+No finite volume options present
+
+Starting time loop
+
+forces forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault:
+    Not including porosity effects
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault:
+    Not including porosity effects
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 2.056195e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 1, Final residual = 0.07274691, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.0640577, No Iterations 1
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.00506105, No Iterations 6
+GAMG:  Solving for p, Initial residual = 0.01401305, Final residual = 9.616338e-005, No Iterations 4
+time step continuity errors : sum local = 0.009767701, global = 0.007341805, cumulative = 0.007341805
+ExecutionTime = 1.101 s  ClockTime = 1 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 1.983614e-005	(pressure: 1.951568e-005	viscous: 3.204527e-007)
+        Cd       : 4.585094e-005	(pressure: 4.495846e-005	viscous: 8.924777e-007)
+        Cl       : 3.733559e-007	(pressure: 3.715596e-007	viscous: 1.796386e-009)
+        Cl(f)    : 2.002282e-005
+        Cl(r)    : -1.964946e-005
+
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.2056017, Final residual = 0.00455413, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.4429545, Final residual = 0.01050347, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.408245, Final residual = 0.01185301, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.991003, Final residual = 0.00907373, No Iterations 10
+GAMG:  Solving for p, Initial residual = 0.03104376, Final residual = 0.0001529365, No Iterations 7
+time step continuity errors : sum local = 0.006229863, global = -0.004810482, cumulative = 0.002531323
+ExecutionTime = 1.683 s  ClockTime = 2 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.01178046	(pressure: 0.0116512	viscous: 0.0001292675)
+        Cd       : 0.02604168	(pressure: 0.02575248	viscous: 0.0002892005)
+        Cl       : 0.0003674439	(pressure: 0.0003613111	viscous: 6.132744e-006)
+        Cl(f)    : 0.01196419
+        Cl(r)    : -0.01159674
+
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1931521, Final residual = 0.01095789, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.2595075, Final residual = 0.01023955, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.2228306, Final residual = 0.009818336, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.08107942, Final residual = 0.0002961257, No Iterations 8
+GAMG:  Solving for p, Initial residual = 0.004866672, Final residual = 3.730951e-005, No Iterations 4
+time step continuity errors : sum local = 0.002782307, global = 0.0009559923, cumulative = 0.003487315
+ExecutionTime = 2.155 s  ClockTime = 2 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.05441285	(pressure: 0.05422363	viscous: 0.0001892213)
+        Cd       : 0.1294669	(pressure: 0.1290344	viscous: 0.0004325054)
+        Cl       : 0.003594597	(pressure: 0.00359874	viscous: -4.142971e-006)
+        Cl(f)    : 0.05621015
+        Cl(r)    : -0.05261555
+
+Time = 4
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1341663, Final residual = 0.006296827, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1479123, Final residual = 0.006526682, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.1244858, Final residual = 0.006122167, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.02628313, Final residual = 0.0001530597, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.002854458, Final residual = 1.827763e-005, No Iterations 4
+time step continuity errors : sum local = 0.001491219, global = -0.0002154614, cumulative = 0.003271854
+ExecutionTime = 2.588 s  ClockTime = 3 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.06837607	(pressure: 0.06818662	viscous: 0.0001894483)
+        Cd       : 0.1661654	(pressure: 0.1657396	viscous: 0.0004257767)
+        Cl       : 0.003217094	(pressure: 0.00321648	viscous: 6.13638e-007)
+        Cl(f)    : 0.06998461
+        Cl(r)    : -0.06676752
+
+Time = 5
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1027506, Final residual = 0.004098069, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.1138531, Final residual = 0.00500658, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.09789185, Final residual = 0.004623824, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.02530339, Final residual = 0.0002305743, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.003214568, Final residual = 1.124962e-005, No Iterations 6
+time step continuity errors : sum local = 0.0006741773, global = -0.0003397724, cumulative = 0.002932082
+ExecutionTime = 3.028 s  ClockTime = 3 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.06907598	(pressure: 0.06889284	viscous: 0.0001831357)
+        Cd       : 0.1728429	(pressure: 0.1724353	viscous: 0.0004075755)
+        Cl       : 0.001521901	(pressure: 0.001510051	viscous: 1.184958e-005)
+        Cl(f)    : 0.06983693
+        Cl(r)    : -0.06831503
+
+Time = 6
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.08501563, Final residual = 0.002988213, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0973019, Final residual = 0.004067794, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.08917478, Final residual = 0.004268741, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.03942223, Final residual = 0.0003115746, No Iterations 5
+GAMG:  Solving for p, Initial residual = 0.004869457, Final residual = 1.783759e-005, No Iterations 6
+time step continuity errors : sum local = 0.0005512799, global = -0.0002849109, cumulative = 0.002647171
+ExecutionTime = 3.467 s  ClockTime = 4 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.06684837	(pressure: 0.06665886	viscous: 0.0001895105)
+        Cd       : 0.1726815	(pressure: 0.172259	viscous: 0.0004224963)
+        Cl       : 8.906801e-005	(pressure: 6.395611e-005	viscous: 2.511189e-005)
+        Cl(f)    : 0.06689291
+        Cl(r)    : -0.06680384
+
+Time = 7
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.07474526, Final residual = 0.002443175, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.08885713, Final residual = 0.003486046, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.08618557, Final residual = 0.003967788, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.06183453, Final residual = 0.0005972681, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.005715495, Final residual = 4.252772e-005, No Iterations 5
+time step continuity errors : sum local = 0.0009065192, global = 0.0006820951, cumulative = 0.003329266
+ExecutionTime = 3.897 s  ClockTime = 4 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.06628157	(pressure: 0.06607823	viscous: 0.0002033408)
+        Cd       : 0.1758288	(pressure: 0.1753739	viscous: 0.000454845)
+        Cl       : -0.0006855273	(pressure: -0.000721115	viscous: 3.558774e-005)
+        Cl(f)    : 0.06593881
+        Cl(r)    : -0.06662434
+
+Time = 8
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.06580224, Final residual = 0.002031067, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.08119081, Final residual = 0.002958326, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.08205744, Final residual = 0.003617081, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.09384944, Final residual = 0.0006692545, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.006784496, Final residual = 4.846156e-005, No Iterations 4
+time step continuity errors : sum local = 0.0007418658, global = 0.0001020608, cumulative = 0.003431327
+ExecutionTime = 4.3 s  ClockTime = 4 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.06772618	(pressure: 0.06750945	viscous: 0.000216724)
+        Cd       : 0.1825912	(pressure: 0.1821051	viscous: 0.0004860887)
+        Cl       : -0.001015199	(pressure: -0.001056621	viscous: 4.142148e-005)
+        Cl(f)    : 0.06721858
+        Cl(r)    : -0.06823378
+
+Time = 9
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.05849269, Final residual = 0.001653484, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.07335326, Final residual = 0.002487243, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0760347, Final residual = 0.003206427, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.15252, Final residual = 0.001002101, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.008267033, Final residual = 7.548918e-005, No Iterations 4
+time step continuity errors : sum local = 0.0008633314, global = -0.0002005848, cumulative = 0.003230742
+ExecutionTime = 4.697 s  ClockTime = 5 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07015442	(pressure: 0.06992692	viscous: 0.0002275003)
+        Cd       : 0.1907098	(pressure: 0.1901997	viscous: 0.0005100994)
+        Cl       : -0.00112126	(pressure: -0.001163977	viscous: 4.27176e-005)
+        Cl(f)    : 0.06959379
+        Cl(r)    : -0.07071505
+
+Time = 10
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.05209504, Final residual = 0.001348522, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06750656, Final residual = 0.002146324, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0702751, Final residual = 0.002837597, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.170428, Final residual = 0.0009912675, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.006616172, Final residual = 5.80727e-005, No Iterations 4
+time step continuity errors : sum local = 0.000760243, global = -0.0001939392, cumulative = 0.003036803
+ExecutionTime = 5.139 s  ClockTime = 5 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07262453	(pressure: 0.07238868	viscous: 0.0002358467)
+        Cd       : 0.1982749	(pressure: 0.1977475	viscous: 0.0005273769)
+        Cl       : -0.001201533	(pressure: -0.001243172	viscous: 4.163866e-005)
+        Cl(f)    : 0.07202376
+        Cl(r)    : -0.0732253
+
+Time = 11
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.04714505, Final residual = 0.001116513, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06443163, Final residual = 0.001887903, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.06609523, Final residual = 0.002569697, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.146746, Final residual = 0.001435086, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.005252012, Final residual = 3.52862e-005, No Iterations 5
+time step continuity errors : sum local = 0.0005423735, global = -0.0001950635, cumulative = 0.002841739
+ExecutionTime = 5.545 s  ClockTime = 6 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07469206	(pressure: 0.0744492	viscous: 0.0002428619)
+        Cd       : 0.2043673	(pressure: 0.203826	viscous: 0.0005413033)
+        Cl       : -0.001242618	(pressure: -0.001281629	viscous: 3.901115e-005)
+        Cl(f)    : 0.07407075
+        Cl(r)    : -0.07531337
+
+Time = 12
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.04300326, Final residual = 0.000934941, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06397501, Final residual = 0.001689241, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.06407324, Final residual = 0.002351822, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.1181993, Final residual = 0.001043077, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.004234134, Final residual = 3.866532e-005, No Iterations 4
+time step continuity errors : sum local = 0.0006717925, global = 0.0001737617, cumulative = 0.003015501
+ExecutionTime = 5.936 s  ClockTime = 6 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07616245	(pressure: 0.07591337	viscous: 0.000249081)
+        Cd       : 0.2086816	(pressure: 0.2081279	viscous: 0.0005536812)
+        Cl       : -0.001219612	(pressure: -0.001255541	viscous: 3.592869e-005)
+        Cl(f)    : 0.07555264
+        Cl(r)    : -0.07677225
+
+Time = 13
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.03838168, Final residual = 0.0007735995, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06365334, Final residual = 0.00148777, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.06284041, Final residual = 0.002128681, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.1034021, Final residual = 0.0008940653, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003680928, Final residual = 3.541953e-005, No Iterations 4
+time step continuity errors : sum local = 0.0006472629, global = 0.0001079425, cumulative = 0.003123443
+ExecutionTime = 6.342 s  ClockTime = 6 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07725692	(pressure: 0.07700186	viscous: 0.0002550553)
+        Cd       : 0.2117728	(pressure: 0.211207	viscous: 0.0005657915)
+        Cl       : -0.001136078	(pressure: -0.001168549	viscous: 3.247064e-005)
+        Cl(f)    : 0.07668888
+        Cl(r)    : -0.07782496
+
+Time = 14
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.03408303, Final residual = 0.003383459, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.06030853, Final residual = 0.001309133, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.06100728, Final residual = 0.001903996, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.09416024, Final residual = 0.0007147039, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003288696, Final residual = 2.342205e-005, No Iterations 5
+time step continuity errors : sum local = 0.0004251523, global = -0.0002343829, cumulative = 0.00288906
+ExecutionTime = 6.727 s  ClockTime = 7 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07804059	(pressure: 0.07778045	viscous: 0.0002601469)
+        Cd       : 0.2138232	(pressure: 0.213247	viscous: 0.0005762059)
+        Cl       : -0.0008033737	(pressure: -0.000832227	viscous: 2.88533e-005)
+        Cl(f)    : 0.07763891
+        Cl(r)    : -0.07844228
+
+Time = 15
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.02911403, Final residual = 0.002757951, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.05466763, Final residual = 0.001084135, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.05738936, Final residual = 0.00163399, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.08707944, Final residual = 0.0007122778, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003240731, Final residual = 2.170922e-005, No Iterations 5
+time step continuity errors : sum local = 0.000385991, global = -0.0001938051, cumulative = 0.002695255
+ExecutionTime = 7.136 s  ClockTime = 7 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07856782	(pressure: 0.0783024	viscous: 0.0002654201)
+        Cd       : 0.2151723	(pressure: 0.2145853	viscous: 0.0005869618)
+        Cl       : -0.000506431	(pressure: -0.0005315699	viscous: 2.513891e-005)
+        Cl(f)    : 0.0783146
+        Cl(r)    : -0.07882103
+
+Time = 16
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.02439952, Final residual = 0.002263301, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0492446, Final residual = 0.0009356351, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.05398938, Final residual = 0.001422516, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.07893299, Final residual = 0.0007245424, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.003152178, Final residual = 1.950508e-005, No Iterations 5
+time step continuity errors : sum local = 0.0003392755, global = 0.0001191182, cumulative = 0.002814374
+ExecutionTime = 7.527 s  ClockTime = 8 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07904584	(pressure: 0.07877531	viscous: 0.0002705264)
+        Cd       : 0.2163691	(pressure: 0.2157715	viscous: 0.0005975896)
+        Cl       : -0.0003248715	(pressure: -0.0003464737	viscous: 2.160219e-005)
+        Cl(f)    : 0.0788834
+        Cl(r)    : -0.07920827
+
+Time = 17
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0203126, Final residual = 0.001887672, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.04579194, Final residual = 0.0008547393, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0522414, Final residual = 0.001273111, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.0699516, Final residual = 0.0002653528, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.002825922, Final residual = 1.705793e-005, No Iterations 4
+time step continuity errors : sum local = 0.0002942593, global = 1.471846e-006, cumulative = 0.002815845
+ExecutionTime = 7.916 s  ClockTime = 8 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07941115	(pressure: 0.07913565	viscous: 0.0002754991)
+        Cd       : 0.2173862	(pressure: 0.2167781	viscous: 0.0006081382)
+        Cl       : -0.0002541234	(pressure: -0.0002719067	viscous: 1.778328e-005)
+        Cl(f)    : 0.07928409
+        Cl(r)    : -0.07953821
+
+Time = 18
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01644981, Final residual = 0.001615354, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.04087824, Final residual = 0.0008075388, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.04868527, Final residual = 0.001156361, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.06527301, Final residual = 0.0002557413, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.002686061, Final residual = 1.662362e-005, No Iterations 4
+time step continuity errors : sum local = 0.0002815673, global = 2.510838e-005, cumulative = 0.002840954
+ExecutionTime = 8.33 s  ClockTime = 8 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07966515	(pressure: 0.07938499	viscous: 0.0002801526)
+        Cd       : 0.2182401	(pressure: 0.2176217	viscous: 0.000618415)
+        Cl       : -0.0002195618	(pressure: -0.0002329574	viscous: 1.339551e-005)
+        Cl(f)    : 0.07955537
+        Cl(r)    : -0.07977493
+
+Time = 19
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01353344, Final residual = 0.0002800987, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.03661475, Final residual = 0.0007665027, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.04449497, Final residual = 0.001066043, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.06076873, Final residual = 0.0002752672, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.002662023, Final residual = 2.022219e-005, No Iterations 4
+time step continuity errors : sum local = 0.0003422298, global = -5.946787e-005, cumulative = 0.002781486
+ExecutionTime = 8.734 s  ClockTime = 9 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07983933	(pressure: 0.07955502	viscous: 0.0002843102)
+        Cd       : 0.219168	(pressure: 0.2185402	viscous: 0.0006277712)
+        Cl       : -0.0002574678	(pressure: -0.000265744	viscous: 8.276268e-006)
+        Cl(f)    : 0.0797106
+        Cl(r)    : -0.07996807
+
+Time = 20
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.01098472, Final residual = 0.0002395444, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.03329196, Final residual = 0.0007876622, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.04160627, Final residual = 0.001042723, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.05602755, Final residual = 0.0002422713, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.002476976, Final residual = 1.833944e-005, No Iterations 4
+time step continuity errors : sum local = 0.0003088852, global = 7.263637e-005, cumulative = 0.002854122
+ExecutionTime = 9.149 s  ClockTime = 9 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07987392	(pressure: 0.07958592	viscous: 0.0002880008)
+        Cd       : 0.2198498	(pressure: 0.2192135	viscous: 0.0006362902)
+        Cl       : -0.0003431312	(pressure: -0.0003466425	viscous: 3.511223e-006)
+        Cl(f)    : 0.07970235
+        Cl(r)    : -0.08004548
+
+Time = 21
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.009025585, Final residual = 0.0002091637, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02994533, Final residual = 0.000766856, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.03760638, Final residual = 0.000978418, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.05189189, Final residual = 0.0002087042, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.002287257, Final residual = 1.985315e-005, No Iterations 4
+time step continuity errors : sum local = 0.0003320211, global = 0.0001182255, cumulative = 0.002972348
+ExecutionTime = 9.556 s  ClockTime = 10 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07979088	(pressure: 0.07949973	viscous: 0.0002911585)
+        Cd       : 0.2202966	(pressure: 0.219653	viscous: 0.0006436159)
+        Cl       : -0.0004620434	(pressure: -0.0004612891	viscous: -7.542321e-007)
+        Cl(f)    : 0.07955986
+        Cl(r)    : -0.08002191
+
+Time = 22
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.007736841, Final residual = 0.0001818799, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02697526, Final residual = 0.0007206208, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.03266634, Final residual = 0.0008976772, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.04723154, Final residual = 0.0004708948, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.002221065, Final residual = 1.723526e-005, No Iterations 5
+time step continuity errors : sum local = 0.0002854245, global = 0.0001524975, cumulative = 0.003124845
+ExecutionTime = 9.955 s  ClockTime = 10 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07964905	(pressure: 0.07935504	viscous: 0.0002940071)
+        Cd       : 0.2205489	(pressure: 0.2198989	viscous: 0.0006500408)
+        Cl       : -0.0005768062	(pressure: -0.0005720796	viscous: -4.726597e-006)
+        Cl(f)    : 0.07936065
+        Cl(r)    : -0.07993746
+
+Time = 23
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.006847911, Final residual = 0.0006558179, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02493977, Final residual = 0.0006541171, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0291473, Final residual = 0.0008007205, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.04270215, Final residual = 0.0003689078, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.002012383, Final residual = 1.455916e-005, No Iterations 5
+time step continuity errors : sum local = 0.0002377295, global = 0.000110327, cumulative = 0.003235172
+ExecutionTime = 10.369 s  ClockTime = 10 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0794165	(pressure: 0.07912006	viscous: 0.0002964453)
+        Cd       : 0.220435	(pressure: 0.2197799	viscous: 0.0006551491)
+        Cl       : -0.0007061481	(pressure: -0.0006973598	viscous: -8.78829e-006)
+        Cl(f)    : 0.07906343
+        Cl(r)    : -0.07976958
+
+Time = 24
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.006175251, Final residual = 0.0005804379, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02273204, Final residual = 0.0005585698, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.02632636, Final residual = 0.0006828022, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.03930636, Final residual = 0.0003412463, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001845708, Final residual = 1.294534e-005, No Iterations 5
+time step continuity errors : sum local = 0.0002094025, global = 9.600137e-005, cumulative = 0.003331174
+ExecutionTime = 10.76 s  ClockTime = 11 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07923717	(pressure: 0.07893827	viscous: 0.0002988947)
+        Cd       : 0.220351	(pressure: 0.2196909	viscous: 0.0006601387)
+        Cl       : -0.0008305708	(pressure: -0.0008176865	viscous: -1.288437e-005)
+        Cl(f)    : 0.07882188
+        Cl(r)    : -0.07965245
+
+Time = 25
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.005143185, Final residual = 0.00011801, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.02067539, Final residual = 0.0005003345, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.0228889, Final residual = 0.0006117465, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.03668254, Final residual = 0.0003380474, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001763806, Final residual = 1.08224e-005, No Iterations 5
+time step continuity errors : sum local = 0.0001735137, global = 7.106824e-005, cumulative = 0.003402242
+ExecutionTime = 11.164 s  ClockTime = 11 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07923582	(pressure: 0.0789345	viscous: 0.0003013199)
+        Cd       : 0.2205864	(pressure: 0.2199214	viscous: 0.0006650458)
+        Cl       : -0.0009071403	(pressure: -0.0008902659	viscous: -1.687445e-005)
+        Cl(f)    : 0.07878225
+        Cl(r)    : -0.07968939
+
+Time = 26
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00413344, Final residual = 0.0001044008, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01895545, Final residual = 0.0004850011, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.02074152, Final residual = 0.0005938613, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.03422635, Final residual = 0.0003064851, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001661472, Final residual = 9.98964e-006, No Iterations 5
+time step continuity errors : sum local = 0.000158569, global = 6.787984e-005, cumulative = 0.003470122
+ExecutionTime = 11.564 s  ClockTime = 12 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07932528	(pressure: 0.07902159	viscous: 0.0003036919)
+        Cd       : 0.2209253	(pressure: 0.2202553	viscous: 0.0006699213)
+        Cl       : -0.0009365854	(pressure: -0.0009161939	viscous: -2.039154e-005)
+        Cl(f)    : 0.07885699
+        Cl(r)    : -0.07979357
+
+Time = 27
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.003376131, Final residual = 9.555494e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01729436, Final residual = 0.0004789706, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01880628, Final residual = 0.0005851813, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.03134748, Final residual = 0.0002794168, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.00158682, Final residual = 1.437185e-005, No Iterations 4
+time step continuity errors : sum local = 0.0002261337, global = -2.027308e-005, cumulative = 0.003449849
+ExecutionTime = 11.934 s  ClockTime = 12 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07944643	(pressure: 0.07914086	viscous: 0.0003055735)
+        Cd       : 0.2212421	(pressure: 0.2205682	viscous: 0.0006738769)
+        Cl       : -0.0009217102	(pressure: -0.0008984741	viscous: -2.323607e-005)
+        Cl(f)    : 0.07898558
+        Cl(r)    : -0.07990729
+
+Time = 28
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002827801, Final residual = 9.048584e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.0154548, Final residual = 0.0004801141, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01682872, Final residual = 0.0005688933, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.02843196, Final residual = 0.0002638126, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001516394, Final residual = 1.242684e-005, No Iterations 4
+time step continuity errors : sum local = 0.0001939703, global = 1.091781e-005, cumulative = 0.003460766
+ExecutionTime = 12.298 s  ClockTime = 12 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07959872	(pressure: 0.07929149	viscous: 0.0003072312)
+        Cd       : 0.2215522	(pressure: 0.2208748	viscous: 0.0006774383)
+        Cl       : -0.0008974299	(pressure: -0.0008721151	viscous: -2.531483e-005)
+        Cl(f)    : 0.07915001
+        Cl(r)    : -0.08004744
+
+Time = 29
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002413467, Final residual = 8.780786e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01369046, Final residual = 0.0004712424, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01490338, Final residual = 0.0005535065, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.0256475, Final residual = 0.0002479276, No Iterations 3
+GAMG:  Solving for p, Initial residual = 0.001420906, Final residual = 1.176403e-005, No Iterations 4
+time step continuity errors : sum local = 0.0001822973, global = 8.598359e-006, cumulative = 0.003469365
+ExecutionTime = 12.685 s  ClockTime = 13 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.07979076	(pressure: 0.07948222	viscous: 0.0003085448)
+        Cd       : 0.2219108	(pressure: 0.2212305	viscous: 0.0006802186)
+        Cl       : -0.0008661023	(pressure: -0.0008394093	viscous: -2.669299e-005)
+        Cl(f)    : 0.07935771
+        Cl(r)    : -0.08022381
+
+Time = 30
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.002098021, Final residual = 8.493842e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01214615, Final residual = 0.0004508637, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01326176, Final residual = 0.0005321664, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.02305831, Final residual = 9.474686e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.001264946, Final residual = 7.138011e-006, No Iterations 4
+time step continuity errors : sum local = 0.0001101975, global = -1.659002e-005, cumulative = 0.003452775
+ExecutionTime = 13.076 s  ClockTime = 13 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08002983	(pressure: 0.07971995	viscous: 0.0003098788)
+        Cd       : 0.2223699	(pressure: 0.2216868	viscous: 0.0006830885)
+        Cl       : -0.0008368784	(pressure: -0.0008092993	viscous: -2.757912e-005)
+        Cl(f)    : 0.07961139
+        Cl(r)    : -0.08044827
+
+Time = 31
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001834252, Final residual = 7.749473e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.01077141, Final residual = 0.0004432955, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01186246, Final residual = 0.000519388, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.0206245, Final residual = 8.766916e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.001163625, Final residual = 6.767027e-006, No Iterations 4
+time step continuity errors : sum local = 0.0001041748, global = -2.509924e-005, cumulative = 0.003427676
+ExecutionTime = 13.463 s  ClockTime = 14 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08027901	(pressure: 0.07996815	viscous: 0.000310861)
+        Cd       : 0.2228739	(pressure: 0.2221887	viscous: 0.0006852098)
+        Cl       : -0.0008176086	(pressure: -0.000789395	viscous: -2.821358e-005)
+        Cl(f)    : 0.07987021
+        Cl(r)    : -0.08068782
+
+Time = 32
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001606699, Final residual = 6.969341e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.009566654, Final residual = 0.0004350316, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.01065586, Final residual = 0.0004986116, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01840341, Final residual = 8.065268e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.001080473, Final residual = 6.389614e-006, No Iterations 4
+time step continuity errors : sum local = 9.823953e-005, global = -2.558e-005, cumulative = 0.003402096
+ExecutionTime = 13.868 s  ClockTime = 14 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0805113	(pressure: 0.08019931	viscous: 0.0003119901)
+        Cd       : 0.2233454	(pressure: 0.2226576	viscous: 0.0006877894)
+        Cl       : -0.0008227121	(pressure: -0.0007938238	viscous: -2.888828e-005)
+        Cl(f)    : 0.08009995
+        Cl(r)    : -0.08092266
+
+Time = 33
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001431171, Final residual = 6.292062e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.008564076, Final residual = 0.0004132497, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.009667159, Final residual = 0.0004690851, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01641527, Final residual = 7.490157e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.001011679, Final residual = 5.209438e-006, No Iterations 4
+time step continuity errors : sum local = 8.004731e-005, global = 2.881926e-006, cumulative = 0.003404977
+ExecutionTime = 14.269 s  ClockTime = 14 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08073727	(pressure: 0.08042443	viscous: 0.0003128368)
+        Cd       : 0.2238049	(pressure: 0.2231154	viscous: 0.0006894466)
+        Cl       : -0.0008573816	(pressure: -0.0008277453	viscous: -2.963629e-005)
+        Cl(f)    : 0.08030858
+        Cl(r)    : -0.08116596
+
+Time = 34
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001290741, Final residual = 5.733988e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.007776597, Final residual = 0.0003811314, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.008841793, Final residual = 0.0004438145, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01469209, Final residual = 6.79942e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0009528846, Final residual = 5.107949e-006, No Iterations 4
+time step continuity errors : sum local = 7.851912e-005, global = 3.653022e-006, cumulative = 0.00340863
+ExecutionTime = 14.673 s  ClockTime = 15 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08094583	(pressure: 0.08063201	viscous: 0.0003138201)
+        Cd       : 0.224213	(pressure: 0.2235215	viscous: 0.0006915556)
+        Cl       : -0.0009161297	(pressure: -0.0008859176	viscous: -3.021213e-005)
+        Cl(f)    : 0.08048776
+        Cl(r)    : -0.08140389
+
+Time = 35
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001168557, Final residual = 5.251799e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.007089455, Final residual = 0.0003480961, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.008121988, Final residual = 0.0004221268, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01313976, Final residual = 6.085515e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0008912919, Final residual = 6.268261e-006, No Iterations 4
+time step continuity errors : sum local = 9.648616e-005, global = -1.032421e-005, cumulative = 0.003398306
+ExecutionTime = 15.087 s  ClockTime = 15 s
+
+
+--> FOAM Warning : 
+    From function virtual bool Foam::regIOobject::readIfModified()
+    in file db/regIOobject/regIOobjectRead.C at line 281
+        Re-reading object turbulenceProperties from file "C:/Users/serva/simflow/StarshipDemonstration/StarshipDemonstration/constant/turbulenceProperties"
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08112903	(pressure: 0.08081462	viscous: 0.0003144115)
+        Cd       : 0.2245803	(pressure: 0.2238878	viscous: 0.0006925433)
+        Cl       : -0.0009930457	(pressure: -0.0009625672	viscous: -3.047849e-005)
+        Cl(f)    : 0.08063251
+        Cl(r)    : -0.08162556
+
+Time = 36
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001066088, Final residual = 4.792051e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.006441283, Final residual = 0.0003148115, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.007484131, Final residual = 0.0004052925, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01175493, Final residual = 5.400338e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0008343475, Final residual = 4.741836e-006, No Iterations 4
+time step continuity errors : sum local = 7.319792e-005, global = 1.961088e-006, cumulative = 0.003400267
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.9952983, Final residual = 0.006465961, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 1, Final residual = 0.01765883, No Iterations 1
+ExecutionTime = 15.658 s  ClockTime = 16 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08196094	(pressure: 0.08097453	viscous: 0.0009864154)
+        Cd       : 0.2264101	(pressure: 0.2242164	viscous: 0.002193721)
+        Cl       : -0.001062251	(pressure: -0.001045334	viscous: -1.691757e-005)
+        Cl(f)    : 0.08142982
+        Cl(r)    : -0.08249207
+
+Time = 37
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001216536, Final residual = 4.951732e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.007883382, Final residual = 0.0004230206, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.009077347, Final residual = 0.0005394351, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01132311, Final residual = 6.354772e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0009311968, Final residual = 4.685323e-006, No Iterations 4
+time step continuity errors : sum local = 6.932083e-005, global = 4.295456e-007, cumulative = 0.003400697
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.6277982, Final residual = 0.01360136, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.1578268, Final residual = 0.002476943, No Iterations 1
+ExecutionTime = 16.211 s  ClockTime = 16 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08239003	(pressure: 0.08143576	viscous: 0.0009542694)
+        Cd       : 0.2273746	(pressure: 0.2252493	viscous: 0.002125359)
+        Cl       : -0.001156895	(pressure: -0.001139442	viscous: -1.745361e-005)
+        Cl(f)    : 0.08181158
+        Cl(r)    : -0.08296848
+
+Time = 38
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.001069433, Final residual = 4.950967e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.007489229, Final residual = 0.0003332953, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.007848359, Final residual = 0.0003962586, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.01015047, Final residual = 4.721534e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0007948567, Final residual = 5.057598e-006, No Iterations 4
+time step continuity errors : sum local = 7.774696e-005, global = -1.186175e-005, cumulative = 0.003388835
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.1143008, Final residual = 0.0005169713, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.1145896, Final residual = 0.002870084, No Iterations 1
+ExecutionTime = 16.743 s  ClockTime = 17 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08241547	(pressure: 0.08146921	viscous: 0.0009462594)
+        Cd       : 0.227437	(pressure: 0.2253269	viscous: 0.002110117)
+        Cl       : -0.001234431	(pressure: -0.001215966	viscous: -1.846498e-005)
+        Cl(f)    : 0.08179825
+        Cl(r)    : -0.08303268
+
+Time = 39
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0009022034, Final residual = 3.991489e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00561091, Final residual = 0.000280072, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.006358766, Final residual = 0.0003673672, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.009332651, Final residual = 4.255314e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0007395746, Final residual = 4.405669e-006, No Iterations 4
+time step continuity errors : sum local = 6.814456e-005, global = 8.024215e-006, cumulative = 0.003396859
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0286902, Final residual = 0.0004357005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.08397508, Final residual = 0.002583398, No Iterations 1
+ExecutionTime = 17.296 s  ClockTime = 17 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0823557	(pressure: 0.08142058	viscous: 0.0009351245)
+        Cd       : 0.2273003	(pressure: 0.2252138	viscous: 0.00208647)
+        Cl       : -0.001312856	(pressure: -0.001294425	viscous: -1.843098e-005)
+        Cl(f)    : 0.08169927
+        Cl(r)    : -0.08301213
+
+Time = 40
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0008011562, Final residual = 3.456486e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.005025937, Final residual = 0.0002375442, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.005823309, Final residual = 0.0003365182, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.008587333, Final residual = 3.686842e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0006704398, Final residual = 4.228302e-006, No Iterations 4
+time step continuity errors : sum local = 6.558112e-005, global = 2.695337e-006, cumulative = 0.003399555
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.01545732, Final residual = 0.0003383745, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.05951962, Final residual = 0.002173873, No Iterations 1
+ExecutionTime = 17.834 s  ClockTime = 18 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08232619	(pressure: 0.08139915	viscous: 0.0009270417)
+        Cd       : 0.2272263	(pressure: 0.2251573	viscous: 0.002069044)
+        Cl       : -0.001374823	(pressure: -0.001356416	viscous: -1.84076e-005)
+        Cl(f)    : 0.08163878
+        Cl(r)    : -0.0830136
+
+Time = 41
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0007246285, Final residual = 3.10427e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.004415696, Final residual = 0.0002043746, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.005228711, Final residual = 0.0003016922, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.007819693, Final residual = 3.333269e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0006206014, Final residual = 3.343071e-006, No Iterations 4
+time step continuity errors : sum local = 5.192108e-005, global = 5.701852e-006, cumulative = 0.003405257
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.009652792, Final residual = 0.0002379714, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.04314826, Final residual = 0.001859064, No Iterations 1
+ExecutionTime = 18.375 s  ClockTime = 18 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08232729	(pressure: 0.08140672	viscous: 0.0009205743)
+        Cd       : 0.2272193	(pressure: 0.2251644	viscous: 0.002054872)
+        Cl       : -0.001417828	(pressure: -0.001399634	viscous: -1.819351e-005)
+        Cl(f)    : 0.08161838
+        Cl(r)    : -0.08303621
+
+Time = 42
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0006557277, Final residual = 2.831804e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.003876432, Final residual = 0.0001764396, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.004637482, Final residual = 0.0002659696, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.007113659, Final residual = 3.188498e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0005830119, Final residual = 3.27838e-006, No Iterations 4
+time step continuity errors : sum local = 5.078288e-005, global = 5.366786e-006, cumulative = 0.003410623
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.006223007, Final residual = 0.0001750264, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.03372507, Final residual = 0.001493994, No Iterations 1
+ExecutionTime = 18.94 s  ClockTime = 19 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08235048	(pressure: 0.08143495	viscous: 0.0009155281)
+        Cd       : 0.2272611	(pressure: 0.2252171	viscous: 0.002043928)
+        Cl       : -0.001446476	(pressure: -0.001428236	viscous: -1.823973e-005)
+        Cl(f)    : 0.08162724
+        Cl(r)    : -0.08307372
+
+Time = 43
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0006109234, Final residual = 2.593208e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.003464991, Final residual = 0.0001564484, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.004174179, Final residual = 0.0002355465, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.006533873, Final residual = 3.067573e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0005462188, Final residual = 3.256509e-006, No Iterations 4
+time step continuity errors : sum local = 5.050479e-005, global = 2.510883e-006, cumulative = 0.003413134
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.004917025, Final residual = 0.0001350964, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.02716803, Final residual = 0.001266605, No Iterations 1
+ExecutionTime = 19.47 s  ClockTime = 20 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08236647	(pressure: 0.08145505	viscous: 0.0009114281)
+        Cd       : 0.2272884	(pressure: 0.2252538	viscous: 0.00203462)
+        Cl       : -0.001466218	(pressure: -0.001448236	viscous: -1.798256e-005)
+        Cl(f)    : 0.08163337
+        Cl(r)    : -0.08309958
+
+Time = 44
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0005639375, Final residual = 2.37349e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.003134243, Final residual = 0.0001446298, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.003761135, Final residual = 0.0002079108, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.005963127, Final residual = 2.978061e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0005124079, Final residual = 3.313465e-006, No Iterations 4
+time step continuity errors : sum local = 5.139046e-005, global = 4.033253e-006, cumulative = 0.003417167
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.003904872, Final residual = 0.0001055978, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.02215869, Final residual = 0.0011105, No Iterations 1
+ExecutionTime = 20.016 s  ClockTime = 20 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08238582	(pressure: 0.08147735	viscous: 0.0009084614)
+        Cd       : 0.2273271	(pressure: 0.2252987	viscous: 0.002028394)
+        Cl       : -0.001473481	(pressure: -0.00145539	viscous: -1.809067e-005)
+        Cl(f)    : 0.08164907
+        Cl(r)    : -0.08312256
+
+Time = 45
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0005086013, Final residual = 2.175593e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002836691, Final residual = 0.0001377133, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.003413605, Final residual = 0.0001887109, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.005562601, Final residual = 2.803351e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0004861795, Final residual = 3.146348e-006, No Iterations 4
+time step continuity errors : sum local = 4.87475e-005, global = -3.352655e-006, cumulative = 0.003413815
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.002630057, Final residual = 8.859968e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.01847349, Final residual = 0.0009882406, No Iterations 1
+ExecutionTime = 20.533 s  ClockTime = 21 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08239607	(pressure: 0.08149015	viscous: 0.0009059182)
+        Cd       : 0.2273484	(pressure: 0.2253261	viscous: 0.002022394)
+        Cl       : -0.001477828	(pressure: -0.001459669	viscous: -1.8159e-005)
+        Cl(f)    : 0.08165715
+        Cl(r)    : -0.08313498
+
+Time = 46
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004640406, Final residual = 2.024238e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002624751, Final residual = 0.000130835, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.003164818, Final residual = 0.0001742739, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.005203891, Final residual = 2.591144e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0004630191, Final residual = 3.234134e-006, No Iterations 4
+time step continuity errors : sum local = 5.010869e-005, global = 8.908533e-006, cumulative = 0.003422723
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001880973, Final residual = 7.299267e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.01553923, Final residual = 0.0009442918, No Iterations 1
+ExecutionTime = 21.059 s  ClockTime = 21 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08240055	(pressure: 0.08149629	viscous: 0.0009042555)
+        Cd       : 0.2273657	(pressure: 0.2253466	viscous: 0.002019092)
+        Cl       : -0.001480693	(pressure: -0.001462272	viscous: -1.842083e-005)
+        Cl(f)    : 0.0816602
+        Cl(r)    : -0.0831409
+
+Time = 47
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004314843, Final residual = 1.867683e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002485934, Final residual = 0.0001244815, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002961101, Final residual = 0.0001593787, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.004970674, Final residual = 2.405492e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0004452589, Final residual = 2.819686e-006, No Iterations 4
+time step continuity errors : sum local = 4.356259e-005, global = -6.802538e-007, cumulative = 0.003422043
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001543341, Final residual = 6.370323e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.01400057, Final residual = 0.0007704095, No Iterations 1
+ExecutionTime = 21.589 s  ClockTime = 22 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0823967	(pressure: 0.08149391	viscous: 0.0009027868)
+        Cd       : 0.2273731	(pressure: 0.2253575	viscous: 0.002015539)
+        Cl       : -0.001493162	(pressure: -0.001474526	viscous: -1.863629e-005)
+        Cl(f)    : 0.08165012
+        Cl(r)    : -0.08314328
+
+Time = 48
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0004106114, Final residual = 1.77607e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002415461, Final residual = 0.0001191324, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002866868, Final residual = 0.0001500631, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.004704125, Final residual = 2.248342e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0004251783, Final residual = 2.606591e-006, No Iterations 4
+time step continuity errors : sum local = 4.02022e-005, global = -1.505251e-006, cumulative = 0.003420538
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001687365, Final residual = 5.541647e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.01316603, Final residual = 0.0007065745, No Iterations 1
+ExecutionTime = 22.135 s  ClockTime = 22 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08239411	(pressure: 0.08149214	viscous: 0.0009019659)
+        Cd       : 0.2273888	(pressure: 0.2253746	viscous: 0.002014138)
+        Cl       : -0.001506966	(pressure: -0.001488076	viscous: -1.888982e-005)
+        Cl(f)    : 0.08164063
+        Cl(r)    : -0.08314759
+
+Time = 49
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003855088, Final residual = 1.69141e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002304493, Final residual = 0.0001160127, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002729138, Final residual = 0.0001431135, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.004499074, Final residual = 2.091159e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0004081988, Final residual = 2.394943e-006, No Iterations 4
+time step continuity errors : sum local = 3.692821e-005, global = 5.637082e-007, cumulative = 0.003421102
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001778889, Final residual = 4.867299e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.01180512, Final residual = 0.0006533315, No Iterations 1
+ExecutionTime = 22.656 s  ClockTime = 23 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08238243	(pressure: 0.08148126	viscous: 0.0009011695)
+        Cd       : 0.227386	(pressure: 0.2253738	viscous: 0.002012182)
+        Cl       : -0.001519383	(pressure: -0.00150054	viscous: -1.88433e-005)
+        Cl(f)    : 0.08162274
+        Cl(r)    : -0.08314212
+
+Time = 50
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003716637, Final residual = 1.627551e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002208835, Final residual = 0.0001130891, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002639097, Final residual = 0.0001355049, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.004287448, Final residual = 1.992597e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003991559, Final residual = 2.186447e-006, No Iterations 4
+time step continuity errors : sum local = 3.37463e-005, global = -1.188722e-006, cumulative = 0.003419913
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.002015751, Final residual = 4.248276e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.01003122, Final residual = 0.0006523227, No Iterations 1
+ExecutionTime = 23.197 s  ClockTime = 23 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08236554	(pressure: 0.08146473	viscous: 0.0009008153)
+        Cd       : 0.227379	(pressure: 0.225367	viscous: 0.002011996)
+        Cl       : -0.001537193	(pressure: -0.001518496	viscous: -1.869686e-005)
+        Cl(f)    : 0.08159695
+        Cl(r)    : -0.08313414
+
+Time = 51
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003621487, Final residual = 1.6085e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002177703, Final residual = 0.0001133818, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00255812, Final residual = 0.0001288971, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.004147712, Final residual = 1.947302e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000391917, Final residual = 2.097374e-006, No Iterations 4
+time step continuity errors : sum local = 3.230645e-005, global = 1.789654e-006, cumulative = 0.003421703
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001432942, Final residual = 3.914164e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.009889564, Final residual = 0.0005800574, No Iterations 1
+ExecutionTime = 23.725 s  ClockTime = 24 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0823403	(pressure: 0.08144005	viscous: 0.0009002499)
+        Cd       : 0.2273522	(pressure: 0.2253414	viscous: 0.002010748)
+        Cl       : -0.001550663	(pressure: -0.001532543	viscous: -1.812025e-005)
+        Cl(f)    : 0.08156497
+        Cl(r)    : -0.08311563
+
+Time = 52
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000347946, Final residual = 1.598078e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002137631, Final residual = 0.0001154662, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002454947, Final residual = 0.000123142, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003987947, Final residual = 1.931323e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003823363, Final residual = 2.006422e-006, No Iterations 4
+time step continuity errors : sum local = 3.089838e-005, global = -3.977032e-007, cumulative = 0.003421305
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001585697, Final residual = 3.54308e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.009046041, Final residual = 0.0005617157, No Iterations 1
+ExecutionTime = 24.309 s  ClockTime = 24 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08231692	(pressure: 0.08141695	viscous: 0.0008999678)
+        Cd       : 0.2273289	(pressure: 0.225318	viscous: 0.002010838)
+        Cl       : -0.001566622	(pressure: -0.00154934	viscous: -1.728266e-005)
+        Cl(f)    : 0.0815336
+        Cl(r)    : -0.08310023
+
+Time = 53
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003444911, Final residual = 1.584855e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002082487, Final residual = 0.0001197296, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002387996, Final residual = 0.0001179873, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003920871, Final residual = 1.930401e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003744615, Final residual = 2.146701e-006, No Iterations 4
+time step continuity errors : sum local = 3.304677e-005, global = 6.396348e-007, cumulative = 0.003421944
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.00108639, Final residual = 3.330899e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.0085684, Final residual = 0.0005292123, No Iterations 1
+ExecutionTime = 24.862 s  ClockTime = 25 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08229224	(pressure: 0.08139279	viscous: 0.0008994438)
+        Cd       : 0.2272974	(pressure: 0.2252876	viscous: 0.002009884)
+        Cl       : -0.001581752	(pressure: -0.001565688	viscous: -1.606361e-005)
+        Cl(f)    : 0.08150136
+        Cl(r)    : -0.08308311
+
+Time = 54
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003338078, Final residual = 1.563748e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002059375, Final residual = 0.0001248488, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002349692, Final residual = 0.0001155885, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003759873, Final residual = 1.911296e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003643609, Final residual = 1.976453e-006, No Iterations 4
+time step continuity errors : sum local = 3.042959e-005, global = -1.939461e-006, cumulative = 0.003420005
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001580599, Final residual = 3.08144e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.008741449, Final residual = 0.0004598575, No Iterations 1
+ExecutionTime = 25.402 s  ClockTime = 26 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08227486	(pressure: 0.08137565	viscous: 0.0008992056)
+        Cd       : 0.2272793	(pressure: 0.2252691	viscous: 0.002010219)
+        Cl       : -0.001591316	(pressure: -0.001576596	viscous: -1.471927e-005)
+        Cl(f)    : 0.0814792
+        Cl(r)    : -0.08307052
+
+Time = 55
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003053811, Final residual = 1.507789e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001997166, Final residual = 0.0001286214, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002244299, Final residual = 0.0001143423, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003616141, Final residual = 1.897441e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003553128, Final residual = 2.092414e-006, No Iterations 4
+time step continuity errors : sum local = 3.222773e-005, global = 2.437146e-006, cumulative = 0.003422442
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.005190902, Final residual = 2.612775e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.007115647, Final residual = 0.0004614245, No Iterations 1
+ExecutionTime = 25.927 s  ClockTime = 26 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08225775	(pressure: 0.08135898	viscous: 0.0008987741)
+        Cd       : 0.2272548	(pressure: 0.2252453	viscous: 0.002009489)
+        Cl       : -0.001595745	(pressure: -0.001582646	viscous: -1.309931e-005)
+        Cl(f)    : 0.08145988
+        Cl(r)    : -0.08305563
+
+Time = 56
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003031339, Final residual = 1.432661e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001955622, Final residual = 0.0001288533, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002212555, Final residual = 0.0001136773, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003461802, Final residual = 1.879878e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003441182, Final residual = 2.080815e-006, No Iterations 4
+time step continuity errors : sum local = 3.201988e-005, global = -2.67301e-006, cumulative = 0.003419769
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.00268419, Final residual = 2.460531e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.009242914, Final residual = 0.0004474722, No Iterations 1
+ExecutionTime = 26.469 s  ClockTime = 27 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08224481	(pressure: 0.0813461	viscous: 0.000898713)
+        Cd       : 0.2272372	(pressure: 0.2252271	viscous: 0.002010092)
+        Cl       : -0.001598899	(pressure: -0.001587444	viscous: -1.145492e-005)
+        Cl(f)    : 0.08144536
+        Cl(r)    : -0.08304426
+
+Time = 57
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003342904, Final residual = 1.344055e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001938607, Final residual = 0.0001200182, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002128164, Final residual = 0.0001126855, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003354471, Final residual = 1.864949e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003338499, Final residual = 2.189084e-006, No Iterations 4
+time step continuity errors : sum local = 3.366973e-005, global = -6.061919e-007, cumulative = 0.003419163
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001422605, Final residual = 2.449038e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.00612249, Final residual = 0.0004562793, No Iterations 1
+ExecutionTime = 27.005 s  ClockTime = 27 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08223323	(pressure: 0.08133475	viscous: 0.0008984822)
+        Cd       : 0.2272183	(pressure: 0.2252085	viscous: 0.002009772)
+        Cl       : -0.001596354	(pressure: -0.001586628	viscous: -9.725101e-006)
+        Cl(f)    : 0.08143505
+        Cl(r)    : -0.08303141
+
+Time = 58
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002847459, Final residual = 1.312044e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001890222, Final residual = 0.0001184477, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002074501, Final residual = 0.0001136085, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003198795, Final residual = 1.807667e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003228287, Final residual = 2.173317e-006, No Iterations 4
+time step continuity errors : sum local = 3.34299e-005, global = -2.135487e-006, cumulative = 0.003417027
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0008319367, Final residual = 2.417992e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.007038963, Final residual = 0.0004229793, No Iterations 1
+ExecutionTime = 27.522 s  ClockTime = 28 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08223297	(pressure: 0.08133444	viscous: 0.0008985291)
+        Cd       : 0.2272231	(pressure: 0.2252127	viscous: 0.002010378)
+        Cl       : -0.001593897	(pressure: -0.001585827	viscous: -8.069879e-006)
+        Cl(f)    : 0.08143602
+        Cl(r)    : -0.08302992
+
+Time = 59
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003062018, Final residual = 1.262548e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00187997, Final residual = 0.0001085472, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002037651, Final residual = 0.0001149307, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003124639, Final residual = 1.759431e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0003134684, Final residual = 2.165557e-006, No Iterations 4
+time step continuity errors : sum local = 3.326723e-005, global = -1.953653e-006, cumulative = 0.003415074
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0006554753, Final residual = 2.403058e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.005923489, Final residual = 0.0004044742, No Iterations 1
+ExecutionTime = 28.05 s  ClockTime = 28 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08223162	(pressure: 0.08133316	viscous: 0.0008984601)
+        Cd       : 0.2272241	(pressure: 0.2252137	viscous: 0.002010441)
+        Cl       : -0.001590144	(pressure: -0.001583697	viscous: -6.447586e-006)
+        Cl(f)    : 0.08143655
+        Cl(r)    : -0.0830267
+
+Time = 60
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0006149653, Final residual = 4.334883e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002764334, Final residual = 9.248261e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001953242, Final residual = 0.0001140578, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003001425, Final residual = 1.578308e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002944819, Final residual = 1.951115e-006, No Iterations 4
+time step continuity errors : sum local = 3.000059e-005, global = -2.137079e-006, cumulative = 0.003412937
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.01846638, Final residual = 2.263579e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.03981779, Final residual = 0.000116832, No Iterations 1
+ExecutionTime = 28.543 s  ClockTime = 29 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08224503	(pressure: 0.08134637	viscous: 0.0008986543)
+        Cd       : 0.2272562	(pressure: 0.2252448	viscous: 0.002011352)
+        Cl       : -0.001586724	(pressure: -0.00158168	viscous: -5.043938e-006)
+        Cl(f)    : 0.08145166
+        Cl(r)    : -0.08303839
+
+Time = 61
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0008150789, Final residual = 2.85722e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.006436166, Final residual = 0.000299956, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.003003998, Final residual = 9.993915e-005, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.00288216, Final residual = 1.538107e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002734089, Final residual = 1.934195e-006, No Iterations 4
+time step continuity errors : sum local = 2.968334e-005, global = -7.267411e-007, cumulative = 0.00341221
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.08687084, Final residual = 1.881142e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.2037478, Final residual = 0.0001057221, No Iterations 1
+ExecutionTime = 29.074 s  ClockTime = 29 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08225156	(pressure: 0.08135292	viscous: 0.0008986367)
+        Cd       : 0.227279	(pressure: 0.2252677	viscous: 0.002011298)
+        Cl       : -0.001581131	(pressure: -0.001577582	viscous: -3.548344e-006)
+        Cl(f)    : 0.081461
+        Cl(r)    : -0.08304213
+
+Time = 62
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002699271, Final residual = 1.176037e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001756524, Final residual = 8.626966e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001858618, Final residual = 0.0001150206, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002831072, Final residual = 1.687576e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000279032, Final residual = 2.084122e-006, No Iterations 4
+time step continuity errors : sum local = 3.202625e-005, global = -2.661489e-006, cumulative = 0.003409548
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.002647929, Final residual = 2.148867e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.005495012, Final residual = 0.0003555187, No Iterations 1
+ExecutionTime = 29.624 s  ClockTime = 30 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08226771	(pressure: 0.08136876	viscous: 0.0008989474)
+        Cd       : 0.2273202	(pressure: 0.2253077	viscous: 0.002012459)
+        Cl       : -0.001579126	(pressure: -0.001576859	viscous: -2.267153e-006)
+        Cl(f)    : 0.08147815
+        Cl(r)    : -0.08305727
+
+Time = 63
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002468302, Final residual = 1.158597e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001631305, Final residual = 8.502805e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00182271, Final residual = 0.0001177816, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002730525, Final residual = 1.675655e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002712803, Final residual = 2.037824e-006, No Iterations 4
+time step continuity errors : sum local = 3.13067e-005, global = -2.246594e-006, cumulative = 0.003407302
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.001571533, Final residual = 2.261536e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.005341846, Final residual = 0.0003553851, No Iterations 1
+ExecutionTime = 30.145 s  ClockTime = 30 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08228383	(pressure: 0.08138479	viscous: 0.0008990404)
+        Cd       : 0.2273611	(pressure: 0.2253484	viscous: 0.002012654)
+        Cl       : -0.001571906	(pressure: -0.001570684	viscous: -1.222129e-006)
+        Cl(f)    : 0.08149788
+        Cl(r)    : -0.08306979
+
+Time = 64
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002330144, Final residual = 1.144735e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00154957, Final residual = 8.461388e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001788661, Final residual = 0.0001196619, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002637062, Final residual = 1.611092e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002612076, Final residual = 1.984515e-006, No Iterations 4
+time step continuity errors : sum local = 3.050149e-005, global = -2.173502e-006, cumulative = 0.003405128
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0009281959, Final residual = 2.343282e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.005440923, Final residual = 0.0003460675, No Iterations 1
+ExecutionTime = 30.656 s  ClockTime = 31 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08230814	(pressure: 0.08140871	viscous: 0.000899431)
+        Cd       : 0.2274187	(pressure: 0.2254049	viscous: 0.002013859)
+        Cl       : -0.001568329	(pressure: -0.001568067	viscous: -2.616331e-007)
+        Cl(f)    : 0.08152398
+        Cl(r)    : -0.08309231
+
+Time = 65
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002179834, Final residual = 1.134428e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001474874, Final residual = 8.361273e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001734246, Final residual = 0.0001195774, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002556246, Final residual = 1.570948e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002504286, Final residual = 1.829105e-006, No Iterations 4
+time step continuity errors : sum local = 2.814235e-005, global = -1.943963e-006, cumulative = 0.003403184
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0007501597, Final residual = 2.400455e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.005043068, Final residual = 0.0003332282, No Iterations 1
+ExecutionTime = 31.18 s  ClockTime = 31 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08232702	(pressure: 0.08142746	viscous: 0.0008995676)
+        Cd       : 0.227466	(pressure: 0.2254519	viscous: 0.002014106)
+        Cl       : -0.001562163	(pressure: -0.001562714	viscous: 5.513392e-007)
+        Cl(f)    : 0.08154594
+        Cl(r)    : -0.0831081
+
+Time = 66
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002315872, Final residual = 1.095954e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001504668, Final residual = 8.349672e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001731596, Final residual = 0.0001170106, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002496395, Final residual = 1.517784e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000241723, Final residual = 1.769028e-006, No Iterations 4
+time step continuity errors : sum local = 2.71914e-005, global = -2.16346e-006, cumulative = 0.003401021
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0009896494, Final residual = 2.411378e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.004492116, Final residual = 0.0003204053, No Iterations 1
+ExecutionTime = 31.677 s  ClockTime = 32 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08234997	(pressure: 0.08144999	viscous: 0.0008999855)
+        Cd       : 0.2275213	(pressure: 0.225506	viscous: 0.002015325)
+        Cl       : -0.001562312	(pressure: -0.001563562	viscous: 1.250193e-006)
+        Cl(f)    : 0.08156882
+        Cl(r)    : -0.08313113
+
+Time = 67
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002242729, Final residual = 1.105772e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001472958, Final residual = 8.519707e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001795787, Final residual = 0.000112726, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002410947, Final residual = 1.4762e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002355361, Final residual = 1.680885e-006, No Iterations 4
+time step continuity errors : sum local = 2.586209e-005, global = 3.01419e-007, cumulative = 0.003401322
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.00065859, Final residual = 2.487948e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.004272657, Final residual = 0.0003257078, No Iterations 1
+ExecutionTime = 32.214 s  ClockTime = 32 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08236803	(pressure: 0.08146791	viscous: 0.0009001131)
+        Cd       : 0.2275688	(pressure: 0.2255533	viscous: 0.002015522)
+        Cl       : -0.001559251	(pressure: -0.001561114	viscous: 1.86338e-006)
+        Cl(f)    : 0.0815884
+        Cl(r)    : -0.08314765
+
+Time = 68
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002315519, Final residual = 1.086713e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00150389, Final residual = 8.716076e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001947176, Final residual = 0.000106511, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002350095, Final residual = 1.42807e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002331754, Final residual = 1.57673e-006, No Iterations 4
+time step continuity errors : sum local = 2.423021e-005, global = -3.416401e-007, cumulative = 0.003400981
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0005379885, Final residual = 2.577526e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.004381081, Final residual = 0.0003086327, No Iterations 1
+ExecutionTime = 32.747 s  ClockTime = 33 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08239102	(pressure: 0.08149047	viscous: 0.0009005493)
+        Cd       : 0.2276276	(pressure: 0.2256107	viscous: 0.002016869)
+        Cl       : -0.001563815	(pressure: -0.001566436	viscous: 2.620461e-006)
+        Cl(f)    : 0.08160911
+        Cl(r)    : -0.08317293
+
+Time = 69
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002349997, Final residual = 1.11319e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001518969, Final residual = 9.588083e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001839353, Final residual = 0.0001048663, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002330894, Final residual = 1.39887e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002343724, Final residual = 1.689411e-006, No Iterations 4
+time step continuity errors : sum local = 2.595145e-005, global = 2.112816e-007, cumulative = 0.003401192
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0005099028, Final residual = 2.62787e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.004037734, Final residual = 0.0002967248, No Iterations 1
+ExecutionTime = 33.277 s  ClockTime = 33 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08240765	(pressure: 0.08150702	viscous: 0.0009006369)
+        Cd       : 0.2276738	(pressure: 0.2256567	viscous: 0.002017102)
+        Cl       : -0.001567904	(pressure: -0.0015713	viscous: 3.395722e-006)
+        Cl(f)    : 0.0816237
+        Cl(r)    : -0.0831916
+
+Time = 70
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002362758, Final residual = 1.17279e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001570204, Final residual = 0.0001014828, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001887891, Final residual = 0.0001060813, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002333282, Final residual = 1.328137e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002366551, Final residual = 1.413545e-006, No Iterations 4
+time step continuity errors : sum local = 2.174133e-005, global = 1.348646e-007, cumulative = 0.003401327
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.000521714, Final residual = 2.715457e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.004096967, Final residual = 0.0002940831, No Iterations 1
+ExecutionTime = 33.824 s  ClockTime = 34 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08242689	(pressure: 0.08152589	viscous: 0.0009010062)
+        Cd       : 0.2277243	(pressure: 0.2257059	viscous: 0.00201836)
+        Cl       : -0.001573424	(pressure: -0.001577763	viscous: 4.338212e-006)
+        Cl(f)    : 0.08164018
+        Cl(r)    : -0.08321361
+
+Time = 71
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002409064, Final residual = 1.194181e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001557042, Final residual = 0.0001135357, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001982174, Final residual = 0.0001097134, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002382173, Final residual = 1.274722e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000241254, Final residual = 1.427286e-006, No Iterations 4
+time step continuity errors : sum local = 2.199063e-005, global = -1.320882e-006, cumulative = 0.003400006
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0006074278, Final residual = 2.765629e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.003844534, Final residual = 0.0002781669, No Iterations 1
+ExecutionTime = 34.357 s  ClockTime = 34 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08243776	(pressure: 0.08153676	viscous: 0.0009009996)
+        Cd       : 0.2277566	(pressure: 0.2257382	viscous: 0.002018348)
+        Cl       : -0.00157943	(pressure: -0.001584671	viscous: 5.241472e-006)
+        Cl(f)    : 0.08164805
+        Cl(r)    : -0.08322747
+
+Time = 72
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000250155, Final residual = 1.198013e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001623705, Final residual = 0.0001195424, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002044905, Final residual = 0.0001143475, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.00244089, Final residual = 1.208176e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002445302, Final residual = 2.327429e-006, No Iterations 3
+time step continuity errors : sum local = 3.581471e-005, global = -7.58806e-007, cumulative = 0.003399247
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0006003198, Final residual = 2.807387e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.003930078, Final residual = 0.0002762459, No Iterations 1
+ExecutionTime = 34.904 s  ClockTime = 35 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08245156	(pressure: 0.08155025	viscous: 0.0009013083)
+        Cd       : 0.2277921	(pressure: 0.2257726	viscous: 0.002019506)
+        Cl       : -0.001584107	(pressure: -0.001590435	viscous: 6.32804e-006)
+        Cl(f)    : 0.0816595
+        Cl(r)    : -0.08324361
+
+Time = 73
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002563534, Final residual = 1.211574e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001666196, Final residual = 0.0001247978, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002109793, Final residual = 0.0001163156, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002543401, Final residual = 1.233423e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002491717, Final residual = 2.456796e-006, No Iterations 3
+time step continuity errors : sum local = 3.784231e-005, global = 1.895317e-006, cumulative = 0.003401143
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0005970623, Final residual = 2.832184e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.003536034, Final residual = 0.0002567412, No Iterations 1
+ExecutionTime = 35.442 s  ClockTime = 36 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08246004	(pressure: 0.08155882	viscous: 0.0009012261)
+        Cd       : 0.2278174	(pressure: 0.2257981	viscous: 0.002019366)
+        Cl       : -0.001581811	(pressure: -0.001589077	viscous: 7.266589e-006)
+        Cl(f)    : 0.08166914
+        Cl(r)    : -0.08325095
+
+Time = 74
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002629477, Final residual = 1.236987e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001710441, Final residual = 0.0001293012, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002173298, Final residual = 0.000117805, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002643799, Final residual = 1.291202e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002547595, Final residual = 1.346566e-006, No Iterations 4
+time step continuity errors : sum local = 2.074086e-005, global = 1.215335e-006, cumulative = 0.003402358
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0005200066, Final residual = 2.877429e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.003370821, Final residual = 0.0002693795, No Iterations 1
+ExecutionTime = 35.985 s  ClockTime = 36 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08247195	(pressure: 0.0815705	viscous: 0.0009014453)
+        Cd       : 0.2278498	(pressure: 0.2258296	viscous: 0.002020262)
+        Cl       : -0.001585793	(pressure: -0.001594226	viscous: 8.432966e-006)
+        Cl(f)    : 0.08167905
+        Cl(r)    : -0.08326485
+
+Time = 75
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002686411, Final residual = 1.264906e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001751032, Final residual = 0.0001315435, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002226519, Final residual = 0.0001178032, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002755473, Final residual = 1.358874e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002615087, Final residual = 1.65699e-006, No Iterations 4
+time step continuity errors : sum local = 2.55232e-005, global = 1.056151e-006, cumulative = 0.003403414
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004939183, Final residual = 2.912404e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.00324868, Final residual = 0.00028231, No Iterations 1
+ExecutionTime = 36.5 s  ClockTime = 37 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08248191	(pressure: 0.08158056	viscous: 0.0009013429)
+        Cd       : 0.2278799	(pressure: 0.2258598	viscous: 0.002020156)
+        Cl       : -0.001587498	(pressure: -0.00159689	viscous: 9.391899e-006)
+        Cl(f)    : 0.08168816
+        Cl(r)    : -0.08327566
+
+Time = 76
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002747671, Final residual = 1.276193e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00178907, Final residual = 0.0001317492, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002273629, Final residual = 0.0001166266, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002841094, Final residual = 1.422613e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002656959, Final residual = 1.666592e-006, No Iterations 4
+time step continuity errors : sum local = 2.565938e-005, global = 2.479666e-006, cumulative = 0.003405894
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004874824, Final residual = 2.864006e-005, No Iterations 1
+bounding epsilon, min: -0.001461939 max: 4308.833 average: 33.72756
+DILUPBiCGStab:  Solving for k, Initial residual = 0.003144194, Final residual = 0.0002777939, No Iterations 1
+ExecutionTime = 37.04 s  ClockTime = 37 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08249892	(pressure: 0.0815974	viscous: 0.0009015139)
+        Cd       : 0.2279208	(pressure: 0.2259	viscous: 0.002020831)
+        Cl       : -0.001583573	(pressure: -0.001593943	viscous: 1.036993e-005)
+        Cl(f)    : 0.08170713
+        Cl(r)    : -0.0832907
+
+Time = 77
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002795677, Final residual = 1.270275e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001813468, Final residual = 0.0001303787, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002288717, Final residual = 0.0001140188, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002919314, Final residual = 1.53924e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002711016, Final residual = 1.985177e-006, No Iterations 4
+time step continuity errors : sum local = 3.056527e-005, global = 1.902932e-006, cumulative = 0.003407797
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004897693, Final residual = 2.916897e-005, No Iterations 1
+bounding epsilon, min: -0.000333205 max: 4312.779 average: 34.1376
+DILUPBiCGStab:  Solving for k, Initial residual = 0.00304842, Final residual = 0.0002696674, No Iterations 1
+ExecutionTime = 37.573 s  ClockTime = 38 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08251304	(pressure: 0.08161161	viscous: 0.0009014209)
+        Cd       : 0.2279555	(pressure: 0.2259348	viscous: 0.002020664)
+        Cl       : -0.001574655	(pressure: -0.001585633	viscous: 1.097768e-005)
+        Cl(f)    : 0.08172571
+        Cl(r)    : -0.08330036
+
+Time = 78
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002817912, Final residual = 1.273052e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001829784, Final residual = 0.0001285654, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002302791, Final residual = 0.0001124778, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002978726, Final residual = 1.648511e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002749753, Final residual = 2.023725e-006, No Iterations 4
+time step continuity errors : sum local = 3.116418e-005, global = 2.919648e-006, cumulative = 0.003410716
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004903674, Final residual = 2.982786e-005, No Iterations 1
+bounding epsilon, min: -0.0001091754 max: 4316.741 average: 34.54031
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002946958, Final residual = 0.0002616457, No Iterations 1
+ExecutionTime = 38.098 s  ClockTime = 38 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08252828	(pressure: 0.08162666	viscous: 0.0009016194)
+        Cd       : 0.2279899	(pressure: 0.2259686	viscous: 0.002021248)
+        Cl       : -0.0015655	(pressure: -0.001576966	viscous: 1.146697e-005)
+        Cl(f)    : 0.08174553
+        Cl(r)    : -0.08331103
+
+Time = 79
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002839201, Final residual = 1.287581e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001846956, Final residual = 0.000126388, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002304633, Final residual = 0.0001116243, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003027122, Final residual = 1.70424e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002784954, Final residual = 2.129757e-006, No Iterations 4
+time step continuity errors : sum local = 3.27944e-005, global = 2.770229e-006, cumulative = 0.003413486
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.00049088, Final residual = 2.96225e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002848719, Final residual = 0.0002532982, No Iterations 1
+ExecutionTime = 38.595 s  ClockTime = 39 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0825389	(pressure: 0.08163732	viscous: 0.0009015744)
+        Cd       : 0.228013	(pressure: 0.225992	viscous: 0.002021088)
+        Cl       : -0.001550736	(pressure: -0.001562266	viscous: 1.153043e-005)
+        Cl(f)    : 0.08176353
+        Cl(r)    : -0.08331426
+
+Time = 80
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002862277, Final residual = 1.294517e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00187361, Final residual = 0.0001253555, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002317099, Final residual = 0.000110517, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003062221, Final residual = 1.724231e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002805865, Final residual = 2.136006e-006, No Iterations 4
+time step continuity errors : sum local = 3.288687e-005, global = 2.232577e-006, cumulative = 0.003415719
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0005085363, Final residual = 3.081433e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002821455, Final residual = 0.0002095975, No Iterations 1
+ExecutionTime = 39.153 s  ClockTime = 39 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08255223	(pressure: 0.08165045	viscous: 0.0009017824)
+        Cd       : 0.2280376	(pressure: 0.2260161	viscous: 0.002021483)
+        Cl       : -0.001532771	(pressure: -0.001544165	viscous: 1.139366e-005)
+        Cl(f)    : 0.08178584
+        Cl(r)    : -0.08331861
+
+Time = 81
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002899496, Final residual = 1.306603e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001903004, Final residual = 0.0001240488, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002323336, Final residual = 0.0001085569, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003093261, Final residual = 1.747249e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002835257, Final residual = 2.182691e-006, No Iterations 4
+time step continuity errors : sum local = 3.361129e-005, global = 2.520418e-006, cumulative = 0.003418239
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.000536964, Final residual = 3.068548e-005, No Iterations 1
+bounding epsilon, min: -0.0002265671 max: 4328.236 average: 35.6849
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002708521, Final residual = 0.0001969694, No Iterations 1
+ExecutionTime = 39.702 s  ClockTime = 40 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08256151	(pressure: 0.08165974	viscous: 0.0009017737)
+        Cd       : 0.2280545	(pressure: 0.2260333	viscous: 0.002021195)
+        Cl       : -0.001510461	(pressure: -0.001521313	viscous: 1.085252e-005)
+        Cl(f)    : 0.08180628
+        Cl(r)    : -0.08331674
+
+Time = 82
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000293227, Final residual = 1.330344e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001927509, Final residual = 0.0001228085, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002317698, Final residual = 0.0001059052, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003112554, Final residual = 1.755588e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002873154, Final residual = 2.095204e-006, No Iterations 4
+time step continuity errors : sum local = 3.227877e-005, global = 1.08929e-006, cumulative = 0.003419329
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0005045792, Final residual = 2.982759e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002580551, Final residual = 0.0002068757, No Iterations 1
+ExecutionTime = 40.227 s  ClockTime = 40 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08257198	(pressure: 0.08166993	viscous: 0.0009020494)
+        Cd       : 0.2280741	(pressure: 0.2260525	viscous: 0.002021633)
+        Cl       : -0.001488984	(pressure: -0.001499024	viscous: 1.004027e-005)
+        Cl(f)    : 0.08182749
+        Cl(r)    : -0.08331647
+
+Time = 83
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002974273, Final residual = 1.36413e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001956069, Final residual = 0.0001229727, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002309903, Final residual = 0.0001046606, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.00311857, Final residual = 1.740681e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002905091, Final residual = 2.010886e-006, No Iterations 4
+time step continuity errors : sum local = 3.098135e-005, global = 1.96744e-006, cumulative = 0.003421296
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004982283, Final residual = 2.956884e-005, No Iterations 1
+bounding epsilon, min: -0.0007521091 max: 4335.561 average: 36.3888
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002535285, Final residual = 0.000184788, No Iterations 1
+ExecutionTime = 40.762 s  ClockTime = 41 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08258278	(pressure: 0.08168065	viscous: 0.000902134)
+        Cd       : 0.2280988	(pressure: 0.2260774	viscous: 0.002021405)
+        Cl       : -0.001460721	(pressure: -0.001469537	viscous: 8.816467e-006)
+        Cl(f)    : 0.08185242
+        Cl(r)    : -0.08331314
+
+Time = 84
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000303085, Final residual = 1.389138e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001985351, Final residual = 0.0001232789, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002304082, Final residual = 0.000104463, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003128633, Final residual = 1.715182e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002927296, Final residual = 1.874165e-006, No Iterations 4
+time step continuity errors : sum local = 2.888863e-005, global = 3.69321e-007, cumulative = 0.003421666
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004946684, Final residual = 2.925027e-005, No Iterations 1
+bounding epsilon, min: -0.002379704 max: 4338.99 average: 36.71875
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002406935, Final residual = 0.0001898691, No Iterations 1
+ExecutionTime = 41.291 s  ClockTime = 41 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08259735	(pressure: 0.08169483	viscous: 0.0009025145)
+        Cd       : 0.2281292	(pressure: 0.2261073	viscous: 0.002021923)
+        Cl       : -0.001431887	(pressure: -0.001439342	viscous: 7.454411e-006)
+        Cl(f)    : 0.08188141
+        Cl(r)    : -0.08331329
+
+Time = 85
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003084425, Final residual = 1.41121e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002014248, Final residual = 0.0001225032, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002306132, Final residual = 0.0001050744, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003141332, Final residual = 1.703456e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000294987, Final residual = 1.782006e-006, No Iterations 4
+time step continuity errors : sum local = 2.747028e-005, global = 6.035284e-007, cumulative = 0.003422269
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004717017, Final residual = 2.808127e-005, No Iterations 1
+bounding epsilon, min: -8.709657e-005 max: 4342.618 average: 37.05293
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002329805, Final residual = 0.0001994727, No Iterations 1
+ExecutionTime = 41.824 s  ClockTime = 42 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08261279	(pressure: 0.08171003	viscous: 0.0009027547)
+        Cd       : 0.2281619	(pressure: 0.22614	viscous: 0.002021899)
+        Cl       : -0.001394652	(pressure: -0.001400408	viscous: 5.755988e-006)
+        Cl(f)    : 0.08191546
+        Cl(r)    : -0.08331011
+
+Time = 86
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003141725, Final residual = 1.433115e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002033323, Final residual = 0.000119258, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002303656, Final residual = 0.0001061742, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003139604, Final residual = 1.694811e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.00029627, Final residual = 1.928988e-006, No Iterations 4
+time step continuity errors : sum local = 2.973833e-005, global = 1.411373e-006, cumulative = 0.00342368
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004600472, Final residual = 2.720658e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002260579, Final residual = 0.0001957485, No Iterations 1
+ExecutionTime = 42.323 s  ClockTime = 42 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08263445	(pressure: 0.08173122	viscous: 0.0009032386)
+        Cd       : 0.2282051	(pressure: 0.2261826	viscous: 0.002022477)
+        Cl       : -0.001354092	(pressure: -0.001358115	viscous: 4.023287e-006)
+        Cl(f)    : 0.08195741
+        Cl(r)    : -0.0833115
+
+Time = 87
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003174076, Final residual = 1.467105e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002037683, Final residual = 0.000114562, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002287641, Final residual = 0.0001071711, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003125511, Final residual = 1.695131e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002965383, Final residual = 1.818371e-006, No Iterations 4
+time step continuity errors : sum local = 2.802753e-005, global = 1.142906e-006, cumulative = 0.003424823
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004494571, Final residual = 2.726881e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.00219193, Final residual = 0.0001884538, No Iterations 1
+ExecutionTime = 42.841 s  ClockTime = 43 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08265585	(pressure: 0.08175227	viscous: 0.0009035825)
+        Cd       : 0.2282467	(pressure: 0.226224	viscous: 0.002022653)
+        Cl       : -0.001309269	(pressure: -0.001311366	viscous: 2.096879e-006)
+        Cl(f)    : 0.08200122
+        Cl(r)    : -0.08331049
+
+Time = 88
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003200313, Final residual = 1.497574e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.002021285, Final residual = 0.0001088368, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002252478, Final residual = 0.0001073744, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003103487, Final residual = 1.706603e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002956397, Final residual = 1.905881e-006, No Iterations 4
+time step continuity errors : sum local = 2.936711e-005, global = 2.967325e-006, cumulative = 0.003427791
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004393794, Final residual = 2.682021e-005, No Iterations 1
+bounding epsilon, min: -0.002202931 max: 4353.763 average: 38.02303
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002124132, Final residual = 0.0001812919, No Iterations 1
+ExecutionTime = 43.382 s  ClockTime = 44 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08268183	(pressure: 0.08177773	viscous: 0.000904109)
+        Cd       : 0.228295	(pressure: 0.2262718	viscous: 0.002023261)
+        Cl       : -0.001259528	(pressure: -0.001259753	viscous: 2.253367e-007)
+        Cl(f)    : 0.08205207
+        Cl(r)    : -0.0833116
+
+Time = 89
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003209251, Final residual = 1.514686e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001998641, Final residual = 0.0001044498, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002213987, Final residual = 0.0001085098, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003070138, Final residual = 1.696522e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002942205, Final residual = 1.688506e-006, No Iterations 4
+time step continuity errors : sum local = 2.600888e-005, global = 4.5699e-007, cumulative = 0.003428248
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004291615, Final residual = 2.616085e-005, No Iterations 1
+bounding epsilon, min: -0.0002096735 max: 4357.598 average: 38.33035
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002059619, Final residual = 0.0001745592, No Iterations 1
+ExecutionTime = 43.91 s  ClockTime = 44 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08270789	(pressure: 0.08180338	viscous: 0.0009045102)
+        Cd       : 0.2283462	(pressure: 0.2263227	viscous: 0.002023517)
+        Cl       : -0.001212099	(pressure: -0.001210349	viscous: -1.750266e-006)
+        Cl(f)    : 0.08210184
+        Cl(r)    : -0.08331394
+
+Time = 90
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003184699, Final residual = 1.510103e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001954867, Final residual = 0.0001042386, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002168417, Final residual = 0.0001113685, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.003013119, Final residual = 1.672753e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002904608, Final residual = 1.809765e-006, No Iterations 4
+time step continuity errors : sum local = 2.78804e-005, global = 1.739992e-006, cumulative = 0.003429988
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004363174, Final residual = 2.599094e-005, No Iterations 1
+bounding epsilon, min: -8.136549e-005 max: 4361.537 average: 38.61509
+DILUPBiCGStab:  Solving for k, Initial residual = 0.002059141, Final residual = 0.0001465437, No Iterations 1
+ExecutionTime = 44.467 s  ClockTime = 45 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0827386	(pressure: 0.08183353	viscous: 0.0009050705)
+        Cd       : 0.2284084	(pressure: 0.2263842	viscous: 0.002024177)
+        Cl       : -0.001162685	(pressure: -0.001159105	viscous: -3.580191e-006)
+        Cl(f)    : 0.08215726
+        Cl(r)    : -0.08331994
+
+Time = 91
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003144651, Final residual = 1.49566e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001900262, Final residual = 0.000108385, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002118224, Final residual = 0.0001139368, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.00295895, Final residual = 1.646422e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000286037, Final residual = 1.485651e-006, No Iterations 4
+time step continuity errors : sum local = 2.287356e-005, global = -4.28835e-007, cumulative = 0.003429559
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004600765, Final residual = 2.554279e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001984432, Final residual = 0.000141215, No Iterations 1
+ExecutionTime = 45 s  ClockTime = 45 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08276687	(pressure: 0.08186139	viscous: 0.0009054813)
+        Cd       : 0.228469	(pressure: 0.2264446	viscous: 0.002024416)
+        Cl       : -0.001115997	(pressure: -0.001110531	viscous: -5.465402e-006)
+        Cl(f)    : 0.08220887
+        Cl(r)    : -0.08332487
+
+Time = 92
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0003070927, Final residual = 1.470685e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001843528, Final residual = 0.0001117777, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.002059598, Final residual = 0.0001153557, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002876519, Final residual = 1.619199e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002781622, Final residual = 1.680779e-006, No Iterations 4
+time step continuity errors : sum local = 2.588599e-005, global = 2.083565e-007, cumulative = 0.003429767
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.000425382, Final residual = 2.441256e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001913014, Final residual = 0.0001493961, No Iterations 1
+ExecutionTime = 45.517 s  ClockTime = 46 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08279576	(pressure: 0.08188969	viscous: 0.0009060725)
+        Cd       : 0.228532	(pressure: 0.2265068	viscous: 0.002025168)
+        Cl       : -0.001070534	(pressure: -0.001063367	viscous: -7.167034e-006)
+        Cl(f)    : 0.08226049
+        Cl(r)    : -0.08333103
+
+Time = 93
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002964717, Final residual = 1.426383e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001783911, Final residual = 0.0001100969, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001990812, Final residual = 0.0001140815, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002793222, Final residual = 1.59549e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002704305, Final residual = 1.466732e-006, No Iterations 4
+time step continuity errors : sum local = 2.257668e-005, global = 2.580835e-007, cumulative = 0.003430025
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004377359, Final residual = 2.429808e-005, No Iterations 1
+bounding epsilon, min: -4.68866e-005 max: 4373.981 average: 39.42113
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001966561, Final residual = 0.0001363257, No Iterations 1
+ExecutionTime = 46.052 s  ClockTime = 46 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08282076	(pressure: 0.08191425	viscous: 0.0009065157)
+        Cd       : 0.2285896	(pressure: 0.2265641	viscous: 0.002025495)
+        Cl       : -0.001026548	(pressure: -0.001017663	viscous: -8.88474e-006)
+        Cl(f)    : 0.08230749
+        Cl(r)    : -0.08333404
+
+Time = 94
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002848223, Final residual = 1.359306e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001713978, Final residual = 0.0001046464, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001906803, Final residual = 0.000110931, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002680401, Final residual = 1.5694e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002610637, Final residual = 1.466612e-006, No Iterations 4
+time step continuity errors : sum local = 2.258402e-005, global = -1.119403e-007, cumulative = 0.003429913
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004836141, Final residual = 2.349152e-005, No Iterations 1
+bounding epsilon, min: -0.0001081931 max: 4378.347 average: 39.67084
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001875399, Final residual = 0.0001275243, No Iterations 1
+ExecutionTime = 46.588 s  ClockTime = 47 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08284835	(pressure: 0.08194123	viscous: 0.0009071203)
+        Cd       : 0.2286465	(pressure: 0.2266202	viscous: 0.002026282)
+        Cl       : -0.0009844994	(pressure: -0.0009741525	viscous: -1.034689e-005)
+        Cl(f)    : 0.0823561
+        Cl(r)    : -0.0833406
+
+Time = 95
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002705808, Final residual = 1.302015e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001629026, Final residual = 9.604947e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00181791, Final residual = 0.0001057573, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002572089, Final residual = 1.538951e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000252508, Final residual = 1.500192e-006, No Iterations 4
+time step continuity errors : sum local = 2.31041e-005, global = 1.198887e-006, cumulative = 0.003431112
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004279628, Final residual = 2.261993e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001785926, Final residual = 0.0001321887, No Iterations 1
+ExecutionTime = 47.114 s  ClockTime = 47 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08287085	(pressure: 0.08196327	viscous: 0.0009075814)
+        Cd       : 0.228692	(pressure: 0.2266653	viscous: 0.002026701)
+        Cl       : -0.0009404033	(pressure: -0.0009286434	viscous: -1.175994e-005)
+        Cl(f)    : 0.08240065
+        Cl(r)    : -0.08334105
+
+Time = 96
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002577246, Final residual = 1.246863e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001555587, Final residual = 8.943489e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.00173186, Final residual = 9.966901e-005, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002461408, Final residual = 1.503989e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.000243892, Final residual = 1.496279e-006, No Iterations 4
+time step continuity errors : sum local = 2.30375e-005, global = 1.496639e-006, cumulative = 0.003432609
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004073277, Final residual = 2.207245e-005, No Iterations 1
+bounding epsilon, min: -0.0012699 max: 4388.225 average: 40.1629
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001792315, Final residual = 0.0001219997, No Iterations 1
+ExecutionTime = 47.662 s  ClockTime = 48 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.0828923	(pressure: 0.08198412	viscous: 0.0009081765)
+        Cd       : 0.2287324	(pressure: 0.2267049	viscous: 0.0020275)
+        Cl       : -0.0008987553	(pressure: -0.0008859379	viscous: -1.281746e-005)
+        Cl(f)    : 0.08244292
+        Cl(r)    : -0.08334168
+
+Time = 97
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.000251271, Final residual = 1.223409e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.00152129, Final residual = 8.706264e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001670938, Final residual = 9.51387e-005, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.00236797, Final residual = 1.472181e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002369339, Final residual = 1.582902e-006, No Iterations 4
+time step continuity errors : sum local = 2.436021e-005, global = 4.085199e-007, cumulative = 0.003433017
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.000422145, Final residual = 2.146566e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001731126, Final residual = 0.0001167984, No Iterations 1
+ExecutionTime = 48.183 s  ClockTime = 48 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08290737	(pressure: 0.08199873	viscous: 0.0009086366)
+        Cd       : 0.228759	(pressure: 0.226731	viscous: 0.002028015)
+        Cl       : -0.0008565825	(pressure: -0.0008428576	viscous: -1.372486e-005)
+        Cl(f)    : 0.08247908
+        Cl(r)    : -0.08333566
+
+Time = 98
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002378479, Final residual = 1.179951e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001457108, Final residual = 8.576354e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001608857, Final residual = 9.124852e-005, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002268442, Final residual = 1.414709e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002301172, Final residual = 1.504215e-006, No Iterations 4
+time step continuity errors : sum local = 2.316276e-005, global = 1.207636e-006, cumulative = 0.003434225
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0003821173, Final residual = 2.05931e-005, No Iterations 1
+bounding epsilon, min: -0.002883289 max: 4398.789 average: 40.63026
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001673494, Final residual = 0.0001237898, No Iterations 1
+ExecutionTime = 48.718 s  ClockTime = 49 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08292032	(pressure: 0.08201112	viscous: 0.0009091997)
+        Cd       : 0.2287793	(pressure: 0.2267504	viscous: 0.002028849)
+        Cl       : -0.0008156768	(pressure: -0.0008014734	viscous: -1.420341e-005)
+        Cl(f)    : 0.08251248
+        Cl(r)    : -0.08332816
+
+Time = 99
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.00022693, Final residual = 1.146498e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001398224, Final residual = 8.330477e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001557488, Final residual = 8.845512e-005, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002214742, Final residual = 1.370916e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002247702, Final residual = 1.515949e-006, No Iterations 4
+time step continuity errors : sum local = 2.333383e-005, global = 6.6657e-008, cumulative = 0.003434292
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0003936695, Final residual = 2.050645e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001741997, Final residual = 0.000118187, No Iterations 1
+ExecutionTime = 49.236 s  ClockTime = 49 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08292838	(pressure: 0.08201877	viscous: 0.0009096108)
+        Cd       : 0.228791	(pressure: 0.2267616	viscous: 0.002029383)
+        Cl       : -0.0007763924	(pressure: -0.0007619889	viscous: -1.440351e-005)
+        Cl(f)    : 0.08254019
+        Cl(r)    : -0.08331658
+
+Time = 100
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.0002218322, Final residual = 1.115733e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uy, Initial residual = 0.001344859, Final residual = 8.027355e-005, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.001519824, Final residual = 8.707e-005, No Iterations 1
+GAMG:  Solving for p, Initial residual = 0.002167248, Final residual = 1.3316e-005, No Iterations 4
+GAMG:  Solving for p, Initial residual = 0.0002191504, Final residual = 1.359642e-006, No Iterations 4
+time step continuity errors : sum local = 2.092731e-005, global = 1.255752e-006, cumulative = 0.003435547
+DILUPBiCGStab:  Solving for epsilon, Initial residual = 0.0004419444, Final residual = 1.96663e-005, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.001603588, Final residual = 0.0001101623, No Iterations 1
+ExecutionTime = 49.793 s  ClockTime = 50 s
+
+forceCoeffs forceCoefficientMonitorOnStarship_Puck_V2_v6InDefault execute:
+    Coefficients
+        Cm       : 0.08293411	(pressure: 0.08202397	viscous: 0.0009101371)
+        Cd       : 0.2287958	(pressure: 0.2267655	viscous: 0.002030338)
+        Cl       : -0.0007361331	(pressure: -0.000721983	viscous: -1.415013e-005)
+        Cl(f)    : 0.08256604
+        Cl(r)    : -0.08330218
+
+End
+

@@ -1,0 +1,120 @@
+FoamFile
+{
+	version	2.0;
+	format	binary;
+	class	dictionary;
+	location	"system";
+	object	changeDictionaryDict;
+}
+p
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	zeroGradient;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		boundaries
+		{
+			type	freestreamPressure;
+			freestreamValue	uniform 0.0;
+		}
+		Starship_Puck_V2_v6
+		{
+			type	zeroGradient;
+		}
+	}
+}
+U
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	surfaceNormalFixedValue;
+			refValue	uniform -10.0;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		boundaries
+		{
+			type	freestreamVelocity;
+			freestreamValue	uniform (10.0 0.0 0.0);
+		}
+		Starship_Puck_V2_v6
+		{
+			type	noSlip;
+		}
+	}
+}
+k
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	turbulentIntensityKineticEnergyInlet;
+			value	uniform 0.009999999776482582;
+			intensity	0.05;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		boundaries
+		{
+			type	turbulentIntensityKineticEnergyInlet;
+			value	uniform 0.009999999776482582;
+			intensity	0.05;
+		}
+		Starship_Puck_V2_v6
+		{
+			type	kqRWallFunction;
+			value	uniform 0.009999999776482582;
+		}
+	}
+}
+epsilon
+{
+	boundaryField
+	{
+		inlet
+		{
+			type	turbulentMixingLengthDissipationRateInlet;
+			value	uniform 1.0;
+			mixingLength	0.001;
+		}
+		outlet
+		{
+			type	zeroGradient;
+		}
+		boundaries
+		{
+			type	turbulentMixingLengthDissipationRateInlet;
+			value	uniform 1.0;
+			mixingLength	0.001;
+		}
+		Starship_Puck_V2_v6
+		{
+			type	epsilonWallFunction;
+			value	uniform 1.0;
+		}
+	}
+}
+nut
+{
+	boundaryField
+	{
+		Starship_Puck_V2_v6
+		{
+			type	nutUWallFunction;
+			value	uniform 0.10999999940395355;
+		}
+	}
+}

@@ -1,0 +1,35 @@
+FoamFile
+{
+	version	2.0;
+	format	ascii;
+	class	polyBoundaryMesh;
+	location	"constant/polyMesh";
+	object	boundary;
+}
+4
+(
+	inlet
+	{
+		type	patch;
+		startFace	318367;
+		nFaces	202;
+	}
+	outlet
+	{
+		type	patch;
+		startFace	318569;
+		nFaces	100;
+	}
+	boundaries
+	{
+		type	patch;
+		startFace	318669;
+		nFaces	1001;
+	}
+	Starship_Puck_V2_v6
+	{
+		type	wall;
+		startFace	319670;
+		nFaces	9986;
+	}
+)
